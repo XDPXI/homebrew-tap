@@ -1,5 +1,5 @@
 cask "mono" do
-  version "1.5.0.b"
+  version "1.5.0b"
   sha256 "2b9dda7a2a9f1ebc9749cb0118e04e1dc267b283318126ecd1dbcee43119d8d6"
 
   url "http://cdn.xdpxi.net:8716/mono/version/#{version}/Mono-MacOS-#{version}.zip",
