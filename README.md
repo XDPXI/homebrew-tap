@@ -15,3 +15,4 @@ brew tap XDPXI/tap
   brew install --cask --no-quarantine xds-code
   ```
 - Obscura Web (COMING SOON)
+- Darkwaters (COMING SOON)
