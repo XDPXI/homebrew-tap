@@ -1,10 +1,10 @@
-# Tap
+# Install Tap
 
 ```bash
 brew tap XDPXI/tap
 ```
 
-# Install
+# Install Apps
 
 - Mono
   ```bash
