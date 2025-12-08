@@ -14,5 +14,8 @@ brew tap XDPXI/tap
   ```bash
   brew install --cask --no-quarantine xds-code
   ```
+- Darkwaters
+  ```bash
+  brew install --cask --no-quarantine darkwaters
+  ```
 - Obscura Web (COMING SOON)
-- Darkwaters (COMING SOON)
