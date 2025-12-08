@@ -11,6 +11,9 @@ brew tap XDPXI/tap
   brew install --cask --no-quarantine mono
   ```
   ```bash
+  brew upgrade --cask --no-quarantine mono
+  ```
+  ```bash
   brew uninstall --cask mono
   ```
 - XD's Code
@@ -18,11 +21,17 @@ brew tap XDPXI/tap
   brew install --cask --no-quarantine xds-code
   ```
   ```bash
+  brew upgrade --cask --no-quarantine xds-code
+  ```
+  ```bash
   brew uninstall --cask xds-code
   ```
 - Darkwaters
   ```bash
   brew install --cask --no-quarantine darkwaters
+  ```
+  ```bash
+  brew upgrade --cask --no-quarantine darkwaters
   ```
   ```bash
   brew uninstall --cask darkwaters
