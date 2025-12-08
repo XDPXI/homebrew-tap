@@ -18,4 +18,18 @@ brew tap XDPXI/tap
   ```bash
   brew install --cask --no-quarantine darkwaters
   ```
-- Obscura Web (COMING SOON)
+
+# Uninstall Apps
+
+- Mono
+  ```bash
+  brew uninstall --cask mono
+  ```
+- XD's Code
+  ```bash
+  brew uninstall --cask xds-code
+  ```
+- Darkwaters
+  ```bash
+  brew uninstall --cask darkwaters
+  ```
