@@ -4,32 +4,26 @@
 brew tap XDPXI/tap
 ```
 
-# Install Apps
+# Apps
 
 - Mono
   ```bash
   brew install --cask --no-quarantine mono
   ```
-- XD's Code
-  ```bash
-  brew install --cask --no-quarantine xds-code
-  ```
-- Darkwaters
-  ```bash
-  brew install --cask --no-quarantine darkwaters
-  ```
-
-# Uninstall Apps
-
-- Mono
   ```bash
   brew uninstall --cask mono
   ```
 - XD's Code
   ```bash
+  brew install --cask --no-quarantine xds-code
+  ```
+  ```bash
   brew uninstall --cask xds-code
   ```
 - Darkwaters
+  ```bash
+  brew install --cask --no-quarantine darkwaters
+  ```
   ```bash
   brew uninstall --cask darkwaters
   ```
