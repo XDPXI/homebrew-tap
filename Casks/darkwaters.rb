@@ -17,6 +17,16 @@ cask "darkwaters" do
 
   app "Darkwaters.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: [
+                     "-d",
+                     "com.apple.quarantine",
+                     "#{appdir}/Darkwaters.app",
+                   ],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/darkwaters",
   ]
