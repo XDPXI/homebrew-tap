@@ -17,6 +17,16 @@ cask "mono" do
 
   app "Mono.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: [
+                     "-d",
+                     "com.apple.quarantine",
+                     "#{appdir}/Mono.app",
+                   ],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/mono",
   ]
