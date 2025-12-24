@@ -41,9 +41,9 @@ cask "xds-code" do
   zap trash: [
     "~/Library/Preferences/dev.xdpxi.xds-code.plist",
     "~/Library/Preferences/xds-code.plist",
-    "~/Library/Caches/dev.xdpxi.xds-code",
-    "~/Library/Caches/xds-code",
-    "~/Library/WebKit/dev.xdpxi.xds-code",
-    "~/Library/WebKit/xds-code",
+    "~/Library/Caches/dev.xdpxi.xds-code/*",
+    "~/Library/Caches/xds-code/*",
+    "~/Library/WebKit/dev.xdpxi.xds-code/*",
+    "~/Library/WebKit/xds-code/*",
   ]
 end
