@@ -19,6 +19,8 @@ cask "xds-code" do
   desc "XD's Code is a code editor that is inspired by VSC."
   homepage "https://github.com/XDPXI/XDs-Code"
 
+  conflicts_with cask: "xds-code@dev"
+
   livecheck do
     url :url
     strategy :github_latest
@@ -26,7 +28,22 @@ cask "xds-code" do
 
   app "xds-code.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: [
+                     "-d",
+                     "com.apple.quarantine",
+                     "#{appdir}/xds-code.app",
+                   ],
+                   sudo: false
+  end
+
   zap trash: [
+    "~/Library/Preferences/dev.xdpxi.xds-code.plist",
     "~/Library/Preferences/xds-code.plist",
+    "~/Library/Caches/dev.xdpxi.xds-code",
+    "~/Library/Caches/xds-code",
+    "~/Library/WebKit/dev.xdpxi.xds-code",
+    "~/Library/WebKit/xds-code",
   ]
 end
