@@ -31,7 +31,7 @@ brew tap XDPXI/tap
   brew install --cask darkwaters
   ```
   ```bash
-  brew upgrade --cask --no-quarantine darkwaters
+  brew upgrade --cask darkwaters
   ```
   ```bash
   brew uninstall --cask darkwaters
