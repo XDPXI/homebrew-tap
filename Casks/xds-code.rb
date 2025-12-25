@@ -1,15 +1,15 @@
 cask "xds-code" do
-  version "0.7.3"
+  version "0.7.4"
 
   on_arm do
-    sha256 "E75E888C766BB9F11EA0FD490BEA61894188D3CC287EC444E860A09A623E0AD6"
+    sha256 "B6E6E22D198152E7BC14E3B577BF2F222F7DA37C5E6D45DEFF5935D42C2E4B6F"
 
     url "https://github.com/XDPXI/XDs-Code/releases/download/#{version}/xds-code_#{version}_macos-aarch64.dmg",
         verified: "github.com"
   end
 
   on_intel do
-    sha256 "4B861639B91F34F384C54F7E5B616AA7EE0BFEC383DF0F9A53B467330C688933"
+    sha256 "1066D6F4B310698B60D89115C239DB18440958977FB5F53361E160A94ACD746C"
 
     url "https://github.com/XDPXI/XDs-Code/releases/download/#{version}/xds-code_#{version}_macos-x64.dmg",
         verified: "github.com"
@@ -18,8 +18,6 @@ cask "xds-code" do
   name "XD's Code"
   desc "XD's Code is a code editor that is inspired by VSC."
   homepage "https://github.com/XDPXI/XDs-Code"
-
-  conflicts_with cask: "xds-code@dev"
 
   livecheck do
     url :url
