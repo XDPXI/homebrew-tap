@@ -1,15 +1,15 @@
 cask "xds-code" do
-  version "0.7.4"
+  version "0.7.5"
 
   on_arm do
-    sha256 "B6E6E22D198152E7BC14E3B577BF2F222F7DA37C5E6D45DEFF5935D42C2E4B6F"
+    sha256 "47E01864033F44444341B9ABEE323DB5A34FD2B203EA4FA883037E9952F2A0C7"
 
     url "https://github.com/XDPXI/XDs-Code/releases/download/#{version}/xds-code_#{version}_macos-aarch64.dmg",
         verified: "github.com"
   end
 
   on_intel do
-    sha256 "1066D6F4B310698B60D89115C239DB18440958977FB5F53361E160A94ACD746C"
+    sha256 "96B985BF1A804930FA7BAB621BBB069009B59D006769FC06EEB54FEFA79D2C8A"
 
     url "https://github.com/XDPXI/XDs-Code/releases/download/#{version}/xds-code_#{version}_macos-x64.dmg",
         verified: "github.com"
