@@ -20,6 +20,14 @@ class Sponge < Formula
     end
   end
 
+  on_linux do
+    on_intel do
+      url "http://cdn.xdpxi.net:8716/sponge/1.0.6/sponge-1.0.6-linux-x86_64.tar.gz",
+          verified: "cdn.xdpxi.net"
+      sha256 "DA4C0D2D95CBA0219D4BFBC380C863558F458817493B6ADB25472D306DA17FF8"
+    end
+  end
+
   def install
     bin.install "sponge"
   end
