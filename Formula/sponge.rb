@@ -22,7 +22,6 @@ class Sponge < Formula
 
   def install
     bin.install "sponge"
-    system "/usr/bin/xattr", "-d", "com.apple.quarantine", "#{bin}/sponge", allow_failure: true
   end
 
   test do
