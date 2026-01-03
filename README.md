@@ -8,13 +8,17 @@ brew tap XDPXI/tap
 
 - Mono
   ```bash
-  brew install --cask mono
+  brew install --cask XDPXI/tap/mono
   ```
 - XD's Code
   ```bash
-  brew install --cask xds-code
+  brew install --cask XDPXI/tap/xds-code
   ```
 - Darkwaters
   ```bash
-  brew install --cask darkwaters
+  brew install --cask XDPXI/tap/darkwaters
+  ```
+- Sponge
+  ```bash
+  brew install XDPXI/tap/sponge
   ```

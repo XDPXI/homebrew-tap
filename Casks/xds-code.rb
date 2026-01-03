@@ -44,12 +44,12 @@ cask "xds-code" do
     "~/Library/Application Support/dev.xdpxi.xds-code/*",
     "~/Library/Application Support/xds-code/",
     "~/Library/Application Support/xds-code/*",
-  
+
     "~/Library/Caches/dev.xdpxi.xds-code",
     "~/Library/Caches/dev.xdpxi.xds-code/*",
     "~/Library/Caches/xds-code",
     "~/Library/Caches/xds-code/*",
-  
+
     "~/Library/WebKit/dev.xdpxi.xds-code",
     "~/Library/WebKit/dev.xdpxi.xds-code/*",
     "~/Library/WebKit/xds-code",
