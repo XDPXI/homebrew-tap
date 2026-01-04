@@ -22,3 +22,6 @@ brew tap XDPXI/tap
   ```bash
   brew install XDPXI/tap/sponge
   ```
+  ```bash
+  brew install XDPXI/tap/spongedev
+  ```
