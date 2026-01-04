@@ -1,4 +1,4 @@
-class Sponge@dev < Formula
+class SpongeDev < Formula
   desc "A performant programming language"
   homepage "https://sponge.xdpxi.dev"
   license "MIT"
