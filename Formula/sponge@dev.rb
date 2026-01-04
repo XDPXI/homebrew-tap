@@ -1,4 +1,4 @@
-class SpongeDev < Formula
+class Sponge@dev < Formula
   desc "A performant programming language"
   homepage "https://sponge.xdpxi.dev"
   license "MIT"
@@ -6,7 +6,7 @@ class SpongeDev < Formula
   depends_on "sdl2"
   conflicts_with "sponge"
 
-  def self.latest_dev_sha
+  def self.date_and_sha
     dev_base = "http://cdn.xdpxi.net:8716/sponge/dev/"
     dirs = `curl -s #{dev_base}`.scan(/href="([^"]+)"/).flatten
     valid_dirs = dirs.select { |d| d =~ /\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}-[0-9a-f]+\/$/ }
@@ -15,17 +15,17 @@ class SpongeDev < Formula
     latest_dir.chomp("/")
   end
 
-  version latest_dev_sha.split("-").last[0..6]
+  version date_and_sha.split("-").last[0..6]
 
   on_macos do
     on_intel do
-      url "http://cdn.xdpxi.net:8716/sponge/dev/#{latest_dev_sha}/sponge-#{version}-macos-x86_64.tar.gz",
+      url "http://cdn.xdpxi.net:8716/sponge/dev/#{date_and_sha}/sponge-#{version}-macos-x86_64.tar.gz",
           verified: "cdn.xdpxi.net"
       sha256 :no_check
     end
 
     on_arm do
-      url "http://cdn.xdpxi.net:8716/sponge/dev/#{latest_dev_sha}/sponge-#{version}-macos-aarch64.tar.gz",
+      url "http://cdn.xdpxi.net:8716/sponge/dev/#{date_and_sha}/sponge-#{version}-macos-aarch64.tar.gz",
           verified: "cdn.xdpxi.net"
       sha256 :no_check
     end
@@ -33,7 +33,7 @@ class SpongeDev < Formula
 
   on_linux do
     on_intel do
-      url "http://cdn.xdpxi.net:8716/sponge/dev/#{latest_dev_sha}/sponge-#{version}-linux-x86_64.tar.gz",
+      url "http://cdn.xdpxi.net:8716/sponge/dev/#{date_and_sha}/sponge-#{version}-linux-x86_64.tar.gz",
           verified: "cdn.xdpxi.net"
       sha256 :no_check
     end
