@@ -1,4 +1,4 @@
-class SpongeATdev < Formula
+Object.const_set("Sponge@dev", Class.new(Formula) do
   desc "A performant programming language (development build)"
   homepage "https://sponge.xdpxi.dev"
   license "MIT"
@@ -37,4 +37,4 @@ class SpongeATdev < Formula
   test do
     system "#{bin}/sponge", "-v"
   end
-end
+end)
