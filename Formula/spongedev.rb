@@ -6,8 +6,8 @@ class Spongedev < Formula
   depends_on "sdl2"
   conflicts_with "sponge"
 
-  VERSION_SHA = "ea17922"
-  TIMESTAMP = "2026-01-04-15-44-17-ea17922"
+  VERSION_SHA = "c9e3c9e"
+  TIMESTAMP = "2026-01-04-15-51-03-c9e3c9e"
   MACOS_X86_64_SHA = "b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793"
   MACOS_AARCH64_SHA = "b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793"
   LINUX_SHA = "b16e15764b8bc06c5c3f9f19bc8b99fa48e7894aa5a6ccdad65da49bbf564793"
