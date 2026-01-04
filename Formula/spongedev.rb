@@ -6,8 +6,8 @@ class Spongedev < Formula
   depends_on "sdl2"
   conflicts_with "sponge"
 
-  VERSION_SHA = "4e78b9c"
-  TIMESTAMP = "2026-01-04-13-20-39-#{VERSION_SHA}"
+  VERSION_SHA = "77d28e1"
+  TIMESTAMP = "-77d28e1"
 
   version VERSION_SHA
 
