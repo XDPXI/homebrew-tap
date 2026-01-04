@@ -5,6 +5,7 @@ class Sponge < Formula
   version "1.0.6"
 
   depends_on "sdl2"
+  conflicts_with "sponge@dev"
 
   on_macos do
     on_intel do
