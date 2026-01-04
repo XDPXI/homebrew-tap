@@ -8,14 +8,13 @@ class Sponge@dev < Formula
 
   def self.date_and_sha
     dev_base = "http://cdn.xdpxi.net:8716/sponge/dev/"
-    dirs = `curl -s #{dev_base}`.scan(/href="([^"]+)"/).flatten
+    dirs = `curl -s #{dev_base}`.scan(/href="([^"]+)"/).flatten.compact.map(&:strip)
     valid_dirs = dirs.select { |d| d =~ /\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}-[0-9a-f]+\/$/ }
-    latest_dir = valid_dirs.sort.last
-    raise "No dev builds found!" unless latest_dir
-    latest_dir.chomp("/")
+    raise "No dev builds found!" if valid_dirs.empty?
+    valid_dirs.sort.last.chomp("/")
   end
 
-  version date_and_sha.split("-").last[0..6]
+  version date_and_sha.split("-").last
 
   on_macos do
     on_intel do
