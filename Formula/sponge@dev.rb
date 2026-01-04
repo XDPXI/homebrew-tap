@@ -6,43 +6,27 @@ class Sponge@dev < Formula
   depends_on "sdl2"
   conflicts_with "sponge"
 
-  def self.date_and_sha
-    dev_base = "http://cdn.xdpxi.net:8716/sponge/dev/"
-    dirs = `curl -s #{dev_base}`.scan(/href="([^"]+)"/).flatten.compact.map(&:strip)
-    valid_dirs = dirs.select { |d| d =~ /\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}-[0-9a-f]+\/$/ }
-    raise "No dev builds found!" if valid_dirs.empty?
-    valid_dirs.sort.last.chomp("/")
-  end
+  VERSION_SHA = "4e78b9c"
+  TIMESTAMP = "2026-01-04-13-20-39-#{VERSION_SHA}"
 
-  version date_and_sha.split("-").last
+  version VERSION_SHA
 
   on_macos do
     on_intel do
-      url "http://cdn.xdpxi.net:8716/sponge/dev/#{date_and_sha}/sponge-#{version}-macos-x86_64.tar.gz",
-          verified: "cdn.xdpxi.net"
+      url "http://cdn.xdpxi.net:8716/sponge/dev/#{TIMESTAMP}/sponge-#{VERSION_SHA}-macos-x86_64.tar.gz"
       sha256 :no_check
     end
 
     on_arm do
-      url "http://cdn.xdpxi.net:8716/sponge/dev/#{date_and_sha}/sponge-#{version}-macos-aarch64.tar.gz",
-          verified: "cdn.xdpxi.net"
+      url "http://cdn.xdpxi.net:8716/sponge/dev/#{TIMESTAMP}/sponge-#{VERSION_SHA}-macos-aarch64.tar.gz"
       sha256 :no_check
     end
   end
 
   on_linux do
     on_intel do
-      url "http://cdn.xdpxi.net:8716/sponge/dev/#{date_and_sha}/sponge-#{version}-linux-x86_64.tar.gz",
-          verified: "cdn.xdpxi.net"
+      url "http://cdn.xdpxi.net:8716/sponge/dev/#{TIMESTAMP}/sponge-#{VERSION_SHA}-linux-x86_64.tar.gz"
       sha256 :no_check
-    end
-  end
-
-  livecheck do
-    url "http://cdn.xdpxi.net:8716/sponge/dev/"
-    regex(%r{href="(\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}-([0-9a-f]+))/"}i)
-    strategy :page_match do |page, regex|
-      page.scan(regex).map { |match| match[1] }.sort.last
     end
   end
 
