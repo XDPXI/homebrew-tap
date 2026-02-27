@@ -14,7 +14,7 @@ class Sponge < Formula
     on_arm do
       url "http://cdn.xdpxi.net:8716/sponge/#{version}/sponge-#{version}-macos-aarch64.tar.gz",
           verified: "cdn.xdpxi.net"
-      sha256 "AC99043BDED2AAE1EE19CD2F7115828444C92BF7455ECC02330328E846ACBEF0"
+      sha256 "6ECA94C01AAAF5BC2E46E7D877966E0C93A08E2292EDCA6290001AD6202F42AC"
     end
   end
 
