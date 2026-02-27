@@ -2,21 +2,19 @@ class Sponge < Formula
   desc "A performant programming language."
   homepage "https://sponge.xdpxi.dev"
   license "MIT"
-  version "1.1.1"
-
-  depends_on "sdl2"
+  version "1.1.3"
 
   on_macos do
     on_intel do
       url "http://cdn.xdpxi.net:8716/sponge/#{version}/sponge-#{version}-macos-x86_64.tar.gz",
           verified: "cdn.xdpxi.net"
-      sha256 "4B5AAD119167B0B1A7172C2616E6BB1F269F41B5ABC0F58D02D4EBED66E3706B"
+      sha256 "929299A971A42EE7599FD0F0BFCAD7E2A5AAA268F48185B86B48EDDF2F364287"
     end
 
     on_arm do
       url "http://cdn.xdpxi.net:8716/sponge/#{version}/sponge-#{version}-macos-aarch64.tar.gz",
           verified: "cdn.xdpxi.net"
-      sha256 "A34878DF37F3D5649A1FDE2EDADD8F444A55E60E5FFE0E23A25AA3F7A5563106"
+      sha256 "AC99043BDED2AAE1EE19CD2F7115828444C92BF7455ECC02330328E846ACBEF0"
     end
   end
 
@@ -24,7 +22,7 @@ class Sponge < Formula
     on_intel do
       url "http://cdn.xdpxi.net:8716/sponge/#{version}/sponge-#{version}-linux-x86_64.tar.gz",
           verified: "cdn.xdpxi.net"
-      sha256 "D7BB2FE859A1A4D74BEE4294F2951B374BAF09F352628ED14CD3DE79426B07FB"
+      sha256 "C090DC7EBBB583ED9252E626E80527BA10554231964586CC1E5DFE1AB0510728"
     end
   end
 
