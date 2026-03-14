@@ -27,7 +27,8 @@ class Sponge < Formula
   end
 
   def install
-    bin.install "sponge"
+    sponge_bin = Dir["**/sponge"].first
+    bin.install sponge_bin
   end
 
   test do
