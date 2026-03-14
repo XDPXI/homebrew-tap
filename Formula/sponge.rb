@@ -27,7 +27,13 @@ class Sponge < Formula
   end
 
   def install
+    Dir["*.tar"].each do |tarfile|
+      system "tar", "-xf", tarfile
+    end
+
     sponge_bin = Dir["**/sponge"].first
+    raise "sponge binary not found in the tarball!" unless sponge_bin
+
     bin.install sponge_bin
   end
 
