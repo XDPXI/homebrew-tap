@@ -31,10 +31,10 @@ class Sponge < Formula
       system "tar", "-xf", tarfile
     end
 
-    sponge_bin = Dir["**/sponge"].first
-    raise "sponge binary not found in the tarball!" unless sponge_bin
+    sponge_bin = Dir["**/Sponge"].find { |f| File.file?(f) && File.executable?(f) }
+    raise "Sponge binary not found in the tarball!" unless sponge_bin
 
-    bin.install sponge_bin
+    bin.install sponge_bin => "sponge"
   end
 
   test do
