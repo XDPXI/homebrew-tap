@@ -2,11 +2,11 @@ cask "gin" do
   name "Gin"
   desc "A modern Wine wrapper for macOS built with SwiftUI"
   homepage "https://git.xdpxi.net/xdpxi/Gin"
-  version "3.0.3"
+  version "3.0.4"
 
   url "https://git.xdpxi.net/xdpxi/Gin/releases/download/#{version}/Gin.zip",
       verified: "git.xdpxi.net"
-  sha256 "d0ef550a26976ef93213fdde1288f46c33714816ca8d8da1a84b4cb50cf05984"
+  sha256 "b2ab0ba8c9ec1895a4dfd24e4d0c07ba1b2ea6a6552b74d29da4e048dd3701cb"
 
   app "Gin.app"
 
