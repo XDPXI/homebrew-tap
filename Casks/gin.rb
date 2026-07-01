@@ -2,7 +2,6 @@ cask "gin" do
   name "Gin"
   desc "A modern Wine wrapper for macOS built with SwiftUI"
   homepage "https://git.xdpxi.net/xdpxi/Gin"
-  licence "GPL-3.0-only"
   version "3.0.1"
 
   url "https://git.xdpxi.net/xdpxi/Gin/releases/download/#{version}/Gin.zip",
