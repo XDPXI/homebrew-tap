@@ -1,4 +1,4 @@
-class GinCMD < Formula
+class Gincmd < Formula
   desc "A modern Wine wrapper for macOS built with SwiftUI"
   homepage "https://git.xdpxi.net/xdpxi/Gin"
   license "GNU GENERAL PUBLIC LICENSE v3"
