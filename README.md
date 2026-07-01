@@ -22,3 +22,11 @@ brew tap XDPXI/tap
   ```bash
   brew install XDPXI/tap/sponge
   ```
+- Gin
+  ```bash
+  brew install --cask XDPXI/tap/gin
+  ```
+- GinCMD
+  ```bash
+  brew install XDPXI/tap/gincmd
+  ```
