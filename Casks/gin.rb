@@ -9,7 +9,7 @@ cask "gin" do
   desc "A modern Wine wrapper for macOS built with SwiftUI"
   homepage "https://git.xdpxi.net/xdpxi/Gin"
 
-  depends_on "gincmd"
+  depends_on formula: "gincmd"
 
   app "Gin.app"
 
