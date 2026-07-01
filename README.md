@@ -6,11 +6,11 @@ brew tap XDPXI/tap
 
 # Apps
 
-- Mono
+- [Mono](https://xdpxi.itch.io/mono)
   ```bash
   brew install --cask XDPXI/tap/mono
   ```
-- XD's Code
+- [XD's Code](https://github.com/XDPXI/XDs-Code)
   ```bash
   brew install --cask XDPXI/tap/xds-code
   ```
@@ -18,15 +18,15 @@ brew tap XDPXI/tap
   ```bash
   brew install --cask XDPXI/tap/darkwaters
   ```
-- Sponge
+- [Sponge](https://sponge.xdpxi.dev)
   ```bash
   brew install XDPXI/tap/sponge
   ```
-- Gin
+- [Gin](https://git.xdpxi.net/xdpxi/Gin)
   ```bash
   brew install --cask XDPXI/tap/gin
   ```
-- GinCMD
+- [GinCmd](https://git.xdpxi.net/xdpxi/Gin)
   ```bash
   brew install XDPXI/tap/gincmd
   ```
