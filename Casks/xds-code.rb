@@ -1,22 +1,22 @@
 cask "xds-code" do
-  version "0.7.5"
+  version "0.8.0"
 
   on_arm do
-    sha256 "47E01864033F44444341B9ABEE323DB5A34FD2B203EA4FA883037E9952F2A0C7"
+    sha256 "5f21e1f3cae2a71f5e0af1c6bfa3607e4dbe991a74d728ede39836f5ccbb674b"
 
     url "https://github.com/XDPXI/XDs-Code/releases/download/#{version}/xds-code_#{version}_macos-aarch64.dmg",
         verified: "github.com"
   end
 
   on_intel do
-    sha256 "96B985BF1A804930FA7BAB621BBB069009B59D006769FC06EEB54FEFA79D2C8A"
+    sha256 "9f2d1110670296753700ac2d82ee4441ceff91e8fa40050516e9dec0dc63dd0e"
 
     url "https://github.com/XDPXI/XDs-Code/releases/download/#{version}/xds-code_#{version}_macos-x64.dmg",
         verified: "github.com"
   end
 
   name "XD's Code"
-  desc "XD's Code is a code editor that is inspired by VSC."
+  desc "XD's Code is a code editor that is inspired by Zed and VSC made using Tauri."
   homepage "https://github.com/XDPXI/XDs-Code"
 
   livecheck do
