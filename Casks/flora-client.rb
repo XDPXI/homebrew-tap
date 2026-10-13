@@ -1,6 +1,6 @@
 cask "flora-client" do
   version "0.5.0"
-  sha256 ""
+  sha256 "2a16a74768b99d1d3e1deb3d68090c6054db186e7b822bb346303b49bfdb637f"
 
   url "http://cdn.xdpxi.net/flora/version/flora-#{version}-macos.tar.gz"
   name "Flora Client"
