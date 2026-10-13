@@ -14,6 +14,16 @@ cask "flora-client" do
 
   app "FloraClient.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: [
+                     "-d",
+                     "com.apple.quarantine",
+                     "#{appdir}/FloraClient.app",
+                   ],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/FloraClient",
     "~/Library/Preferences/FloraClient*",
